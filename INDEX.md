@@ -114,3 +114,4 @@
 ## 📌 BitManipulatioin (`src/bitmanipulation`)
 
 -   [Reversing bits](src/bitmanipulation/ReverseBits.java)
+- [Printing right most bit](src/bitmanipulation/PrintRightMostBit.java)
