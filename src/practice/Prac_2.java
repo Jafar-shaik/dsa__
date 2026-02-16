@@ -4,9 +4,9 @@ import java.util.*;
 public class Prac_2 {
     public static void main (String[] args) throws java.lang.Exception
     {
-        Random random = new Random();
-        int a = random.nextInt();
-        System.out.println(a);
+        int n = 3;
+        int ans = n & 1;
+        System.out.println(ans);
     }
 }
 

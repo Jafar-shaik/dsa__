@@ -111,4 +111,6 @@
 -   [Swap Numbers](src/tricks/SwapNums.java)
 
 ------------------------------------------------------------------------
+## 📌 BitManipulatioin (`src/bitmanipulation`)
 
+-   [Reversing bits](src/bitmanipulation/ReverseBits.java)
