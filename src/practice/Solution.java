@@ -1,31 +1,25 @@
 package practice;
-import java.util.HashMap;
+import java.util.Arrays;
 
 class Solution {
     public static void main(String[] args) {
-        char a = 'a';
-        int num = (int) a;
-        System.out.println(num);
-        ngl();
+        int[] nums = {1,6,2,9};
+        int k = 3;
+        find(nums, k);
     }
 
-//    public static void ngl(char[] letters, char target){
-    public static void ngl(){
-//        int t1 = (int) target;
-        int tg = 9;
-        int[] nums = {1,3,5,7,9};
-        int left = 0, right = nums.length;
-        int ans = 0;
-        while(left <= right){
-            int mid = left + (right - left) / 2;
-            if(nums[mid] == tg){
-                ans = nums[mid];
-            } else if (nums[mid] < tg) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
+    public static void find(int[] nums, int k){
+        Arrays.sort(nums);
+        int n = nums.length;
+        int maxBalance = 1;
+        int i = 0;
+        for(int j = 0; j < n; j++){
+            while(nums[j] > nums[i] * k){
+                i++;
             }
+            maxBalance = Math.max(maxBalance, j - i + 1);
         }
-        System.out.println(ans);
+        int ans = n - maxBalance;
+        System.out.println(maxBalance);
     }
 }

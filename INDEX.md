@@ -15,6 +15,7 @@
     Difference](src/arraysandstringsproblems/MinimumAbsoluteDifference.java)
 -   [Reverse Words In
     String](src/arraysandstringsproblems/ReverseWorkdsInString.java)
+-   [Minimum removals - 3634](src/arraysandstringsproblems/MinRemoval.java)
 
 ### 🔹 2D Arrays
 
@@ -114,4 +115,4 @@
 ## 📌 BitManipulatioin (`src/bitmanipulation`)
 
 -   [Reversing bits](src/bitmanipulation/ReverseBits.java)
-- [Printing right most bit](src/bitmanipulation/PrintRightMostBit.java)
+-   [Printing right most bit](src/bitmanipulation/PrintRightMostBit.java)
