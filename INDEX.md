@@ -16,6 +16,7 @@
 -   [Reverse Words In
     String](src/arraysandstringsproblems/ReverseWorkdsInString.java)
 -   [Minimum removals - 3634](src/arraysandstringsproblems/MinRemoval.java)
+-   [first Substring](src/arraysandstringsproblems/FirstSubstring.java)
 
 ### 🔹 2D Arrays
 
@@ -116,3 +117,4 @@
 
 -   [Reversing bits](src/bitmanipulation/ReverseBits.java)
 -   [Printing right most bit](src/bitmanipulation/PrintRightMostBit.java)
+-   [Altering the bits](src/bitmanipulation/AlteringBits.java)
