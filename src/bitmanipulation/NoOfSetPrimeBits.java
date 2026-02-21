@@ -1,36 +1,31 @@
-package practice;
-import java.util.*;
+package bitmanipulation;
 
-public class Prac_2 {
+public class NoOfSetPrimeBits {
     public static void main(String[] args) {
         int left = 6, right = 10;
-        int count = 0;
+        countPrimeSetBits(left, right);
+    }
 
+    public static int countPrimeSetBits(int left, int right) {
+        int count = 0;
         while(left <= right){
             if(isPrime(left)){
-                count ++;
+                count++;
             }
-            left ++;
+            left++;
         }
-        System.out.println(count);
+        return count;
     }
+
     public static boolean isPrime(int num){
         int nsb = 0;
         while(num > 0){
-            nsb += ( num & 1);
+            nsb += (num & 1);
             num >>= 1;
         }
         if( nsb == 2 || nsb == 3 || nsb ==  5 || nsb == 7 || nsb == 11 || nsb == 13 || nsb == 17 || nsb == 19){
             return true;
         }
         return false;
-
     }
-
-
 }
-
-//3 5
-//1 4
-//2 5
-//6 4
