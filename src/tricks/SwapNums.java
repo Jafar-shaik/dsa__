@@ -5,9 +5,9 @@ public class SwapNums {
         int a = 23;
         int b = 32;
         System.out.println(a+ ", "+b);
-        a = a + b;
-        b = a - b;
-        a = a - b;
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
         System.out.println(a+", "+b);
     }
 }

@@ -3,31 +3,25 @@ import java.util.*;
 
 public class Prac_2 {
     public static void main(String[] args) {
-        int left = 6, right = 10;
-        int count = 0;
+        //code here...
 
-        while(left <= right){
-            if(isPrime(left)){
-                count ++;
+        int[] nums = {10, 5, 2, 7, 1, 9};
+        int t = 15;
+        int max = 0;
+        int start = 0, end = 1;
+        int sum = nums[start] + nums[end];
+        while (end < nums.length){
+            if(sum == t){
+                max = Math.max(max, end - start + 1);
+            }else if(sum > t){
+                start++;
+            }else {
+                end++;
             }
-            left ++;
+
         }
-        System.out.println(count);
-    }
-    public static boolean isPrime(int num){
-        int nsb = 0;
-        while(num > 0){
-            nsb += ( num & 1);
-            num >>= 1;
-        }
-        if( nsb == 2 || nsb == 3 || nsb ==  5 || nsb == 7 || nsb == 11 || nsb == 13 || nsb == 17 || nsb == 19){
-            return true;
-        }
-        return false;
 
     }
-
-
 }
 
 //3 5

@@ -73,6 +73,8 @@
 -   [Remove
     Duplicates](src/twopointers/samedirection/RemoveDuplicates.java)
 -   [Remove Element](src/twopointers/samedirection/RemoveElement.java)
+-   [Happy Number](src/twopointers/samedirection/HappyNumber.java)
+-   [Finfing Duplicate](src/twopointers/samedirection/FindDuplicate.java)
 
 ### 🔹 Sliding Window
 
@@ -118,3 +120,10 @@
 -   [Reversing bits](src/bitmanipulation/ReverseBits.java)
 -   [Printing right most bit](src/bitmanipulation/PrintRightMostBit.java)
 -   [Altering the bits](src/bitmanipulation/AlteringBits.java)
+-   [Number of set prime bits](src/bitmanipulation/NoOfSetPrimeBits.java)
+
+---------------------------------------------------------------------------
+
+## 📌 Collection (`src/collection`)
+
+-   [Sort by bits](src/collection/SortByBits.java)
