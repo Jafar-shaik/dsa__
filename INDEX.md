@@ -127,3 +127,8 @@
 ## 📌 Collection (`src/collection`)
 
 -   [Sort by bits](src/collection/SortByBits.java)
+
+----------------------------------------------------------------------------
+
+## 📌 Sorting (`src/sorting`)
+-   [SortColors](src/sorting/SortColors.java)
