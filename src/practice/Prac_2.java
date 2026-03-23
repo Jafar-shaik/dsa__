@@ -1,39 +1,40 @@
 package practice;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Prac_2 {
     public static void main (String[] args) throws java.lang.Exception{
-        int nums[] ={0, 2, 1, 2, 0, 1, 0};
-        int k = 2;
-        sortColors(nums);
-        System.out.println(Arrays.toString(nums));
+        int[] nums1 = {3, 2, 1};
+        int[] nums2 = {1, 2};
+        find(nums1,nums2);
     }
-
-    public static void sortColors(int[] nums) {
-        //write code...
-
-        int zero = 0, one = 0, two = 0;
-        for(int i = 0; i < nums.length; i++){
-            if(nums[i] == 0){
-                zero++;
-            }else if (nums[i] == 1){
-                one++;
-            } else{
-                two++;
+    public static void find(int[] nums1, int[] nums2){
+        int n = nums1.length;
+        int m = nums2.length;
+        HashSet<Integer> set = new HashSet<>();
+        Set<Integer> nums = new HashSet<>();
+        for(int i = 0; i < n; i++){
+            set.add(nums1[i]);
+        }
+        for(int i = 0; i < m; i++){
+            if(set.contains(nums2[i])){
+                nums.add(nums2[i]);
             }
         }
 
-        for(int i = 0; i < zero; i++){
-            nums[i] = 0;
+        int arr[] = new int[nums.size()];
+        int i = 0;
+        for (int num : nums) {
+            arr[i] = num;
+            i++;
         }
-        for(int i = zero; i < one + zero; i++){
-            nums[i] = 1;
-        }
-        for(int i = one + zero; i < nums.length; i++){
-            nums[i] = 2;
-        }
-    }
+//        return arr;
+        System.out.println(Arrays.toString(arr));
 
+    }
 }
 
 //3 5

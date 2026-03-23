@@ -46,6 +46,7 @@
     Search](src/searching/binarysearchingproblems/Binarysearch.java)
 -   [Next Greatest
     Letter](src/searching/binarysearchingproblems/NextGreatestLetter.java)
+-   [Perfect squares](src/searching/binarysearchingproblems/PerfectSqaures.java)
 
 ------------------------------------------------------------------------
 
@@ -127,6 +128,8 @@
 ## 📌 Collection (`src/collection`)
 
 -   [Sort by bits](src/collection/SortByBits.java)
+-   [Intersection of Arrays](src/collection/IntersectionOfArrays.java)
+-   [Longest Consecutive Numbers](src/collection/LongestConsecutiveNums.java)
 
 ----------------------------------------------------------------------------
 

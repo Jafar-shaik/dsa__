@@ -2,7 +2,7 @@ package others;
 
 public class MajorityElement {
     public static void main(String[] args) {
-        int[] nums = {2,2,1,1,1,2,2};
+        int[] nums = {5,5,2};
         findMajority(nums);
     }
 
@@ -11,6 +11,7 @@ public class MajorityElement {
         for(int num : nums){
             if(freq == 0){
                 ans = num;
+                freq++;
             }else if(ans == num){
                 freq++;
             }else{
