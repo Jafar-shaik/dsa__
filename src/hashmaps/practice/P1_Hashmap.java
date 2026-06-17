@@ -4,16 +4,18 @@ import java.util.HashMap;
 
 public class P1_Hashmap {
     public static void main(String[] args) {
-        HashMap<Integer, String> myMap = new HashMap<>();
-        myMap.put(1,"jafar");
-        myMap.put(2,"jakeer");
-        myMap.put(4,"raj kiran");
+        HashMap<Integer, Integer> myMap = new HashMap<>();
+        myMap.put(1, 200);
+        myMap.put(2, 190);
+        myMap.put(3, 199);
+        System.out.println(myMap.get(3));
+        System.out.println(myMap.getOrDefault(2, 0));
         System.out.println(myMap.get(4));
-        System.out.println(myMap.containsKey(3));
-        System.out.println(myMap.getOrDefault(2,"Not found"));
-        System.out.println(myMap.size());
-        System.out.println(myMap.remove(2));
-        System.out.println(myMap.isEmpty());
+        System.out.println(myMap.getOrDefault(4, 0));
+        myMap.replace(1, 500);
+        System.out.println(myMap.get(1));
+
+
 
     }
 }
