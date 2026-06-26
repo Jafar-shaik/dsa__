@@ -2,28 +2,39 @@ package practice;
 
 
 public class Prac_1 {
-    public static void main (String[] args) {
-        String s = "p##";
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if(ch >= 'a' && ch <= 'z') {
-                sb.append(ch);
-            } else if(ch == '*' && sb.length() >= 1) {
-                sb.deleteCharAt(sb.length() - 1);
-            } else if(ch == '#' && sb.length() >= 1) {
-                sb.append(sb.charAt(sb.length() - 1));
-            }else {
-                sb.reverse();
+    public static void main(String[] args) {
+        String s = "jafar";
+        s = "";
+        System.out.println(s);
+    }
+
+    static boolean canAllocate(int[] arr, int k, int maxTime) {
+        int currTime = 0, workers = 1;
+        for(int xTime : arr) {
+            if(xTime + currTime <= maxTime) {
+                currTime += xTime;
+            }
+            else{
+                workers++;
+                currTime = xTime;
+
+                if(workers > k) {
+                    return false;
+                }
             }
         }
 
-        System.out.println(sb);
+        return true;
     }
 }
 
 
 
-// # duplicate
-// * remove
-// % reverse
+
+
+/*
+    low = 23, high = 106
+
+
+
+ */
