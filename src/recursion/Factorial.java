@@ -1,4 +1,4 @@
-package recursion.basic;
+package recursion;
 
 // this is just a basic...
 public class Factorial {

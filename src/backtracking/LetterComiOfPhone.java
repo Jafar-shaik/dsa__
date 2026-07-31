@@ -1,4 +1,4 @@
-package recursion.backtracking;
+package backtracking;
 import java.util.*;
 
 public class LetterComiOfPhone {

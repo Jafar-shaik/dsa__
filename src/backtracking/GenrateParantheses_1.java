@@ -1,4 +1,4 @@
-package recursion.backtracking;
+package backtracking;
 import java.util.ArrayList;
 import java.lang.*;
 public class GenrateParantheses_1 {

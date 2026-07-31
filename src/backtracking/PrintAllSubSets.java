@@ -1,6 +1,5 @@
-package recursion.backtracking;
+package backtracking;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class PrintAllSubSets {
     static ArrayList<ArrayList<Integer>> subsets = new ArrayList<>();

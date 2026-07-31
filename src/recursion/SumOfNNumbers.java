@@ -1,4 +1,4 @@
-package recursion.basic;
+package recursion;
 
 public class SumOfNNumbers {
     public static void main(String[] args) {
